@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Получаем путь к репозиторию из URL
+      const path = '/' + location.pathname.split('/')[1];
+      // Делаем перенаправление на index.html
+      location.replace(path + '/index.html');
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting to the correct page...</h1>
+    <p>If you are not redirected automatically, follow this <a href="./">link</a>.</p>
+  </body>
+</html>
